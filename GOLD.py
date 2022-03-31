@@ -182,7 +182,7 @@ while i2 == True:
             else:
                 nl = 0
     nl += 1
-    if int(ost_sell) > 0 :
+    if int(ost_sell) > 22 :
         for i in list_prise:
             if prise_1 > (i+4):
                 ps = prise_1
@@ -192,7 +192,7 @@ while i2 == True:
                 sell = driver.find_element_by_xpath("/html/body/div[1]/main/div/section/div[3]/div[2]/div/div[1]/div/div[10]/div/div[1]/div[2]/div[5]/div/div[2]/div[2]/button").click()
                 print ("Старая цена: " + str(i) + "  Новая цена: " + str(prise_1) + "Выстовляю на продажу за: " + str(ps2))
                 list_prise.remove(i)
-    if int(ost_buy) > 0:
+    if int(ost_buy) > 22:
         flag_buy += 1
         if flag_buy % 5 == 0:
             if prise_2 > prise_1 and prise_2 != 0:
